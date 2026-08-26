@@ -28,3 +28,12 @@ externo; esto los trae a un lugar propio, versionado y servido por código.
 | archivo | qué es | peso |
 |---|---|---|
 | `video/cumo-sistema.mp4` | Explicación a cámara del Sistema Cumo, 60 s, 540×960. Va en el bloque B00 de la página de producto. | 3,8 MB |
+
+## Imágenes
+
+Van acá las que TN recomprimiría de más. TN sirve máximo 1024×1024 y baja la
+calidad a ~1/5 (el conector pasaba de 25 KB a 9,7 KB); GitHub Pages entrega el
+archivo tal cual. El filename es la URL pública, así que va con nombre SEO.
+
+    # master lossless en el repo, publicado en q=100 (invisible, 1/3 del peso)
+    Image.open(src).save(dest, "WEBP", quality=100, method=6)
